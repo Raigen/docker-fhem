@@ -1,0 +1,12 @@
+version: '2'
+services:
+  fhem:
+    container_name: fhem
+    image: raigen/rpi-alpine-fhem:speedtest
+    volumes:
+      - fhem-data:/opt/fhem
+    ports:
+      - "8083:8083"
+volumes:
+  fhem-data:
+    external: true
