@@ -2,9 +2,10 @@ version: '2'
 services:
   fhem:
     container_name: fhem
-    image: raigen/rpi-alpine-fhem
+    image: raigen/fhem:alpine_speedtest
     volumes:
       - fhem-data:/opt/fhem
+      - /etc/localtime:/etc/localtime:ro
     ports:
       - "8083:8083"
 volumes:
