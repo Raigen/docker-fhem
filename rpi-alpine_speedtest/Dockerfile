@@ -14,7 +14,7 @@ RUN apk add --update perl-device-serialport \
 RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN mkdir -p /opt/fhem && \
     addgroup fhem && \
-    adduser -D -G fhem -h /opt/fhem -u 1000 fhem
+    adduser -D -G fhem -G dialout -h /opt/fhem -u 1000 fhem
 
 VOLUME /opt/fhem
 

@@ -12,7 +12,7 @@ RUN apk add --update perl-device-serialport \
 
 RUN mkdir -p /opt/fhem && \
     addgroup fhem && \
-    adduser -D -G fhem -h /opt/fhem -u 1000 fhem
+    adduser -D -G fhem -G dialout -h /opt/fhem -u 1000 fhem
 
 VOLUME /opt/fhem
 
