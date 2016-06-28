@@ -8,6 +8,7 @@ RUN apk add --update perl-device-serialport \
                      perl-io-socket-ssl \
                      perl-libwww \
                      perl-xml-simple \
+                     perl-json \
                      python3 \
         && rm -rf /var/cache/apk/*
 

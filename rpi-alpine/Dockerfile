@@ -8,6 +8,7 @@ RUN apk add --update perl-device-serialport \
                      perl-io-socket-ssl \
                      perl-libwww \
                      perl-xml-simple \
+                     perl-json \
         && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /opt/fhem && \
