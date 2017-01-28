@@ -14,6 +14,6 @@ script:
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     docker login -u="$DOCKER_USER" -p="$DOCKER_PASS"
-    docker push hypriot/rpi-mysql:rpi-alpine
-    docker push hypriot/rpi-mysql:rpi-alpine_speedtest
+    docker push raigen/fhem:rpi-alpine
+    docker push raigen/fhem:rpi-alpine_speedtest
   fi
