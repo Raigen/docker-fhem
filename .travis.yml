@@ -7,7 +7,7 @@ script:
 - docker run --rm --privileged multiarch/qemu-user-static:register --reset
 # build image
 - cd rpi-alpine && docker build -t raigen/fhem:rpi-alpine .
-- cd rpi-alpine_speedtest && docker build -t raigen/fhem:rpi-alpine_speedtest .
+- cd ../rpi-alpine_speedtest && docker build -t raigen/fhem:rpi-alpine_speedtest .
 # test image
 #- docker run hypriot/rpi-mysql mysql --version
 # push image
